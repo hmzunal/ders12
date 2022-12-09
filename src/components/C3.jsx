@@ -1,13 +1,17 @@
+
+import { memo } from 'react';
+
+import './style.css'
 function C3(props)
 {
     console.log("c3 çalıştı")
     return (
         <>
-        <p>Ben C3  </p>
+        <p id='deneme'>Ben C3  </p>
           {props.children}
     </>
     );
 
 }
 
-export default C3;
+export default memo(C3);

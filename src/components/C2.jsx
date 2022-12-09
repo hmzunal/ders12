@@ -1,4 +1,7 @@
+import { memo } from "react";
+
 function C2()
+
 {
     console.log("c2 çalıştı")
     return ( 
@@ -9,5 +12,5 @@ function C2()
              );
 
 }
-
-export default C2;
+//memo değişmeyen komponentin tekrar çalışmamasını sağlar ve bu sayede daha hızlı işlem yapılır
+export default memo(C2);
